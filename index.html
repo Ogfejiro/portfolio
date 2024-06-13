@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -37,14 +38,14 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="section__pic-container" data-aos="fade-left">
         <img
           src="./assets/pic.JPG"
-          alt="John Doe profile picture"
+          alt="Presh profile picture"
           class="about-pic"
         />
       </div>
-      <div class="section__text">
+      <div class="section__text" data-aos="fade-right">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Ogwara Precious</h1>
         <p class="section__text__p2">Frontend Developer</p>
@@ -72,7 +73,7 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -120,7 +121,7 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section id="experience" data-aos="fade-up">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
@@ -134,7 +135,7 @@
                   alt="Experience icon"
                   class="icon"
                 />
-                <div>
+                <div data-aos="fade-left">
                   <h3>HTML</h3>
                   <p>Experienced</p>
                 </div>
@@ -145,7 +146,7 @@
                   alt="Experience icon"
                   class="icon"
                 />
-                <div>
+                <div data-aos="fade-right">
                   <h3>CSS</h3>
                   <p>Experienced</p>
                 </div>
@@ -157,7 +158,7 @@
                   alt="Experience icon"
                   class="icon"
                 />
-                <div>
+                <div data-aos="fade-left">
                   <h3>JavaScript</h3>
                   <p>Basic</p>
                 </div>
@@ -168,7 +169,7 @@
                   alt="Experience icon"
                   class="icon"
                 />
-                <div>
+                <div data-aos="fade-right">
                   <h3>TypeScript</h3>
                   <p>Basic</p>
                 </div>
@@ -180,7 +181,7 @@
                   alt="Experience icon"
                   class="icon"
                 />
-                <div>
+                <div data-aos="fade-left">
                   <h3>Git</h3>
                   <p>Intermediate</p>
                 </div>
@@ -191,7 +192,7 @@
                   alt="Experience icon"
                   class="icon"
                 />
-                <div>
+                <div data-aos="fade-right">
                   <h3>Node JS</h3>
                   <p>Intermediate</p>
                 </div>
@@ -202,7 +203,7 @@
                   alt="Experience icon"
                   class="icon"
                 />
-                <div>
+                <div data-aos="fade-left">
                   <h3>React</h3>
                   <p>Expert</p>
                 </div>
@@ -351,7 +352,7 @@
     </section>
     <footer>
       <nav>
-        <div class="nav-links-container">
+        <div class="nav-links-container" data-aos="fade-in">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -363,5 +364,11 @@
       <p>Copyright &#169; 2023 ogwara-precious. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
   </body>
 </html>
